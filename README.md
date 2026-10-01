@@ -21,8 +21,16 @@ A symbolic calculus calculator built with **Python + Tkinter + SymPy**.
 ## Requirements (for source)
 pip install sympy
 
-## Run from source
+## 运行源码
+
+需要 Python 3 和 SymPy：
+```bash
+pip install sympy
 python main.py
 
 ## Build EXE
 pyinstaller -F -w -i icon.ico --add-data "icon.ico;." -n CalculusCalculator main.py
+
+## 要求（来源）
+PIP安装Sympy
+pip install sympy
