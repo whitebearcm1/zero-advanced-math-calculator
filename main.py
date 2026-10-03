@@ -107,10 +107,11 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("高数计算器")
-        self.iconbitmap(resource_path("icon.ico"))
+        ico_path = resource_path("icon.ico")
+        if os.path.isfile(ico_path):
+            self.iconbitmap(ico_path)
         self.geometry("980x720")
         self.minsize(860, 600)
-
         self.op_var = tk.StringVar(value="diff | 单变量求导 / 高阶导数")  # ← 原来缺这个
 
         self.history = []
